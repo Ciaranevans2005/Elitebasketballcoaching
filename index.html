@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Elite Basketball Coaching - personalised training and summer camps to help you elevate your game.">
+    <title>Elite Basketball Coaching</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7); /* backround is see-through */
+            color: white;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffc107;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            background-image: url('https://th.bing.com/th/id/R.bd1e6f99729ee38aadd09819d924190f?rik=3iFKbzvGH%2bEscw&riu=http%3a%2f%2fwww.highlandradio.com%2fwp-content%2fuploads%2f2019%2f09%2fbasketball-2.jpg&ehk=1r1TMaFT1TZH%2fO9w5c5R3gauPQnThnaZl8s1bsjvqfU%3d&risl=&pid=ImgRaw&r=0');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        .content {
+            text-align: center;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .content button {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .content button:hover {
+            background-color: #ffc107;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coaching.html">Personalised Coaching</a></li>
+                <li><a href="camps.html">Camps</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Home</h1>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>Welcome to Elite Basketball Coaching</h2>
+        <p>Personalised training and summer camps designed to help you excel.</p>
+        <button onclick="location.href='coaching.html'">Explore Coaching</button>
+        <button onclick="location.href='camps.html'">View Camps</button>
+    </div>
+
+    <!-- Highlight Section -->
+    <section id="highlights">
+        <h2>Why Choose Us?</h2>
+        <p>Elite Basketball Coaching offers a unique approach to skill development, teamwork, and leadership. Whether you're looking for personal improvement or a competitive edge, our programs are tailored to meet your needs.</p>
+    </section>
+
+    <!-- Image Slider -->
+    <section id="slider">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/camp1.jpg" alt="Summer Camp Highlights" style="width:100%">
+                <div class="text">Summer Camp Highlights</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/training1.jpg" alt="Personal Training" style="width:100%">
+                <div class="text">Personalised Training Sessions</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"The personalised training sessions helped me improve my shooting technique significantly. Highly recommend!"</p>
+            <p><strong>- Rian Carroll., High School Player</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"The summer camp was incredible! My son gained so much confidence and had a blast with his teammates."</p>
+            <p><strong>- Sarah Oreilly., Parent</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"Elite Basketball Coaching is the real deal. The attention to detail and dedication to player development is unmatched."</p>
+            <p><strong>- Mike Bonaparte., Amateur League Player</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Elite Basketball Coaching. All Rights Reserved.</p>
+        <p>Follow us on <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+    </footer>
+</body>
+</html>
